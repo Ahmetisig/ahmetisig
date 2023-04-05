@@ -1,10 +1,9 @@
-16,21,11] & [8,12,22] -> Önce tüm diziyi eşit parçalara böldüm.
-[16] & [21,11] & [8] & [12,22] -> Dizinin atomik birimlerine ulaşılana ve daha fazla bölme mümkün olmayana kadar bu iki diziyi daha fazla yarıya böldüm.
-[16] & [21] , [11] & [8] & [12] , [22]
-[16] & [11,21] & [8] & [12,22] -> Elemanların boyut karşılaştırmasına dayalı olarak tekrar elemanları birleştirmeye başladım.
-[11,16,21] & [8,12,22] -> Her liste için öğeyi karşılaştırdım ve sonra bunları sıralı bir şekilde başka bir listede birleştirdim.
-[8,11,12,16,21,22] -> Son birleştirme
-Büyük O Gösterimi
-Her birleştirme (n-1) karşılaştırmaya ihtiyaç duyar(n=dizi boyutu) EXP: [16] & [11,21] = [11,16,21] -> Yani 3 değer ve 2 karşılaştırma Seviyem ne kadar derin
-? 2^x=n -> x=logn
-n.logn=O(nlogn) --> Büyük O Gösterimi
+1- Kök "7"
+2- 5<7 => 5 sola yerleştirilir.
+3- 1<7 1<5 => 1, 5'in solunda yer alır.
+4- 8>7 => 8, 7'nin sağında yer alır.
+5- 3<7 3<5 3>1 => 3 1'in sağına yerleştirilir.
+6- 6<7 6>5 => 6, 5'in sağına yerleştirilir.
+7- 0<7 0<5 0<1 => 0, 1'in soluna yerleştirilir.
+8- 9 >7 9>8 => 9, 8'in solunda yer alır. 9- 4<7 4<5 4>1 4>3 => 4, 3'ün solunda yer alır.
+10- 2<7 2<5 2 >1 2<3 => 2, 3'ün sağına yerleştirilir.
